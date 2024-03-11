@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scrollbar-color: var(--primary) grey;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to right, #000000, #434343);
+    color: white;
+    font-family: "Poppins";
+}
+
+:root {
+    accent-color: mediumvioletred;
+    --primary: #c9184a;
+    --secondary: #ff4d6d;
+    --card-dark: #800f2f;
+    --error: #ef233c;
+    --red-card: linear-gradient(to right, #cb356b, #bd3f32);
+    --carmesi-card: linear-gradient(to right, #da4453, #89216b);
+    --light-card: linear-gradient(to right, #fffbd5, #b20a2c);
+}
+
+.red-card {
+    background-color:  #bd3f32;
+}
+
+.carmesi_card {
+    background-color: var(--card-dark);
+}
+
+.light-card {
+    background-color:  var(--secondary);
+}
+
+.black-card {
+    background-color: black;
+}
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.left_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: sticky;
+    top: 50px;
+}
+
+.left_text {
+    margin-bottom: 30px;
+}
+
+.left_text h1 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.left_text p {
+    max-width: 450px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_inputs,
+.form_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.form_top,
+.form_mid,
+.form_bot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form_field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.form_field.error input {
+    border: 1px solid #dc3545;
+}
+
+.form_field small {
+    color: var(--error);
+    max-width: 300px;
+    text-align: center;
+    padding: 7px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="tel"] {
+    border: 1px solid #ff8fa3;
+    background: black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    color: white;
+}
+
+#message {
+    width: 100%;
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.message span {
+    color: #b5b8bd;
+}
+
+button[type="submit"] {
+    background-color:  var(--primary);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: flex;
+    align-self: flex-end;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.custom_label {
+    display: grid;
+    grid-template-columns: 16px auto;
+    gap: 12px;
+}
+
+
+.mid_container {
+    background-color: aliceblue;
+    width: 1px;
+    height: 85vh;
+    position: sticky;
+    top: 50px;
+}
+
+.right_container {
+    height: 100%;
+    width: 500px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card {
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card_left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.card_title {
+    font-size: 20px;
+}
+
+.card_qty,
+.card_extras {
+    color: rgb(206, 206, 206);
+}
+
+.card_extras {
+    max-width: 90%;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+}
+
+.card_hour,
+.card_date {
+    padding: 5px 15px;
+    border-radius: 80px;
+    text-align: center;
+}
+
+.card_right {
+    display: flex;
+    gap: 20px;
+}
+
+.card_right a {
+    color: aliceblue;
+}
+
+.card_right i:hover {
+    color: rgba(255, 255, 255, 0.699);
+    transition: all 0.2s ease;
+}
+
+.card_right i {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.card_img {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 20%;
+}
+
+.lupa-img {
+    right: -15px;
+    bottom: -35px;
+}
+
+.laptop-img {
+    right: -25px;
+    bottom: -35px;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #000 inset !important;
+    -webkit-text-fill-color: #6b7280 !important;
+}
